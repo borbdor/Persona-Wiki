@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Planner</title>
+    <meta name="description" content="Interactive Persona team planner to build a balanced party from different games.">
+    <meta name="author" content="Borbényi Dóra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stilus/style.css">
+    <link rel="icon" type="img" href="kepek/jackfrost.jpg">
+
+    <script src="js/planner.js" defer></script>
+</head>
+<body class="planner-theme">
+
+<header class="top-tabs">
+    <a href="index.html"><div class="tab">Overview</div></a>
+    <a href="persona1.html"><div class="tab">Persona 1</div></a>
+    <a href="persona2.html"><div class="tab">Persona 2</div></a>
+    <a href="persona3.html"><div class="tab">Persona 3</div></a>
+    <a href="persona4.html"><div class="tab">Persona 4</div></a>
+    <a href="persona5.html"><div class="tab">Persona 5</div></a>
+    <a href="planner.html"><div class="tab active">Team Planner</div></a>
+</header>
+
+<main class="planner-layout">
+    <section>
+        <h1>Persona Team Planner</h1>
+        <p>
+            Build a small Persona team from different games and check whether you have
+            a good balance between attackers, healers and support characters.
+        </p>
+
+        <label for="gameFilter"><strong>Filter by game:</strong></label>
+        <select id="gameFilter">
+            <option value="ALL">All games</option>
+            <option value="P2">Persona 2</option>
+            <option value="P3">Persona 3</option>
+            <option value="P4">Persona 4</option>
+            <option value="P5">Persona 5</option>
+        </select>
+
+        <div id="persona-list" style="margin-top: 16px;"></div>
+    </section>
+
+    <aside>
+        <h2>Your team</h2>
+        <p id="team-stats"></p>
+        <div id="team-list"></div>
+    </aside>
+</main>
+
+<footer>
+    <p>Persona Wiki – Team Planner</p>
+</footer>
+
+</body>
+</html>
